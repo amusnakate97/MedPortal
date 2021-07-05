@@ -1,0 +1,181 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Startup Success Prediction</title>
+
+
+    <!-- BootStrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+
+    <!-- css -->
+    <link rel="stylesheet" href="static/css/styles.css">
+
+
+</head>
+
+<body>
+
+    <!-- As a heading -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="/">Predict chronic kidney disease</a>
+            </div>
+        </div>
+    </nav>
+
+    <br><br><br>
+
+
+    <div class="container">
+
+
+
+        <form action="\chronic" method="post">
+
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <!-- Source -->
+                            <p>Red blood cells</p>
+                            <input type="radio" id="normal" name="rbc" value="normal">
+                            <label for="normal">Yes</label><br>
+                            <input type="radio" id="abnormal" name="rbc" value="abnormal">
+                            <label for="abnormal">No</label><br>
+                            <br>
+                            <br>
+
+                            <p>Albumin</p>
+                            <input type="number" name="al">
+
+                            <p>Red blood cells count</p>
+                            <input type="number" name="rc">
+
+                            <p>Hemoglobin</p>
+                            <input type="number" name="hemo">
+
+                            <p>specific gravity</p>
+                            <input type="number" name="sg">
+                            <br>
+                            <br>
+                            <p>Hypertension</p>
+                            <input type="radio" id="htn_yes" name="htn" value="yes">
+                            <label for="htn_yes">Yes</label><br>
+                            <input type="radio" id="htn_no" name="htn" value="no">
+                            <label for="htn_no">No</label><br>
+                            <input type="radio" id="htn_unknown" name="htn" value="unknown">
+                            <label for="htn_unknown">Unknown</label><br>
+                              <br>
+                            <br>
+                            <p>Pus cell</p>
+                            <input type="radio" id="pc_normal" name="pc" value="normal">
+                            <label for="pc_normal">Yes</label><br>
+                            <input type="radio" id="pc_abnormal" name="pc" value="abnormal">
+                            <label for="pc_abnormal">No</label><br>
+
+
+
+
+
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <p>Diabetes mellitus</p>
+                            <input type="radio" id="dm_yes" name="dm" value="yes">
+                            <label for="dm_yes">Yes</label><br>
+                            <input type="radio" id="dm_no" name="dm" value="no">
+                            <label for="dm_no">No</label><br>
+                            <input type="radio" id="dm_unknown" name="dm" value="unknown">
+                            <label for="dm_unknown">Unknown</label><br>
+
+
+                             <p>Sodium</p>
+                            <input type="number" name="sod">
+
+                            <p>Blood glucose random</p>
+                            <input type="number" name="bgr">
+
+                            <p>Potassium</p>
+                            <input type="number" name="pot">
+                              <br>
+                            <br>
+                            <p>Pedal edema</p>
+                            <input type="radio" id="pe_yes" name="pe" value="yes">
+                            <label for="pe_yes">Yes</label><br>
+                            <input type="radio" id="pe_no" name="pe" value="no">
+                            <label for="pe_no">No</label><br>
+
+                            <br>
+                            <br>
+                            <p>White blood cell count</p>
+                            <input type="number" name="wc">
+
+                            <p>Blood urea</p>
+                            <input type="number" name="bu">
+
+                            <p>Age</p>
+                            <input type="number" name="age">
+
+                            <p>Blood pressure</p>
+                            <input type="number" name="bp">
+
+                            <br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <br>
+            <br>
+            <br>
+
+
+
+
+            <br>
+            <br>
+            <br>
+            <!-- Submit -->
+            <input type="submit" value="Submit" class="btn btn-secondary">
+        </form>
+
+        <br>
+        <br>
+
+        <h3>{{ prediction_text }}</h3>
+
+
+        <br>
+        <br>
+
+    </div>
+
+
+
+
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
